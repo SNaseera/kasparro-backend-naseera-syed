@@ -4,6 +4,8 @@
 **Track:** Backend & ETL Systems
 **Repository:** kasparro-backend-naseera-kouser
 
+---
+
 **_Project Overview_**
 
 This project is a production-style backend service with an ETL (Extract–Transform–Load) pipeline, built as part of the Kasparro Backend & ETL Systems Assignment.
@@ -18,41 +20,42 @@ It demonstrates:
 
 The system simulates ingestion of structured data, applies transformations, and persists it into a relational database with API access.
 
+---
+
 **System Architecture**
 
 <img width="1024" height="1536" alt="ChatGPT Image Dec 9, 2025, 11_41_32 AM" src="https://github.com/user-attachments/assets/dc4e34c0-77dc-4492-a243-6e305af0a70b" />
 
-Folder Structure
+---
 
-kasparro-backend-naseera-syed/
+**Folder Structure**
+
+kasparro-backend-naseera-kouser/
 ├── app/
-│ ├── main.py # FastAPI entry point
-│ ├── models.py # Database models
-│ ├── schemas.py # API schemas
-│ ├── crud.py # Database operations
-│
-│ ├── api/v1/
-│ │ ├── init.py
-│ │ ├── routes.py # API routes
-│ │ └── deps.py # route dependencies
-│
-│ ├── db/
-│ │ ├── init.py
-│ │ ├── base.py
-│ │ └── session.py
-│
-│ ├── etl/
-│ │ ├── init.py
-│ │ ├── ingest.py
-│ │ ├── transform.py
-│ │ ├── load.py
-│ │ └── crypto_api.py # Crypto APIs integration
-│
+│   ├── __init__.py
+│   ├── main.py                 # FastAPI entry point
+│   ├── models.py               # Database models
+│   ├── schemas.py              # Pydantic schemas
+│   ├── crud.py                 # DB operations
+│   ├── api/
+│   │   └── v1/
+│   │       ├── __init__.py
+│   │       ├── routes.py       # API routes
+│   │       └── deps.py         # Dependencies
+│   ├── db/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   └── session.py
+│   └── etl/
+│       ├── __init__.py
+│       ├── ingest.py
+│       ├── transform.py
+│       ├── load.py
+│       └── crypto_api.py       # CoinPaprika & CoinGecko integration
 ├── scripts/
-│ └── run_etl.py # ETL runner script
-│
+│   └── run_etl.py              # ETL runner script
 ├── tests/
-│ └── test_api.py
+│   └── test_api.py
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
@@ -60,6 +63,8 @@ kasparro-backend-naseera-syed/
 ├── .gitignore
 ├── alembic.ini
 └── README.md
+
+---
 
 **Technology Stack**
 
@@ -72,6 +77,8 @@ kasparro-backend-naseera-syed/
 | Testing            | Pytest                 |
 | Containerization   | Docker                 |
 | Environment Config | python-dotenv          |
+
+---
 
 ETL Pipeline Design
 
