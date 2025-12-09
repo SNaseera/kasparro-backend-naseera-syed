@@ -30,7 +30,7 @@ The system simulates ingestion of structured data, applies transformations, and 
 
 **Folder Structure**
 
-kasparro-backend-naseera-kouser/
+kasparro-backend-naseera-syed/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py                 # FastAPI entry point
